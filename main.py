@@ -53,9 +53,10 @@ if __name__=='__main__':
    f'{G}[+] {C}Retired     : {W}{str(item["IsRetired"])} \n' \
    f'{G}[+] {C}Spam        : {W}{str(item["IsSpamList"])}'
    )
+   print('_'*50)
   save=input(f'{G}[+]' + C + 'Wanna save results to JSON file [Yn]' + W)
   if(save.lower!='n'):
-   save_json(q+'.json'+,res)
+   save_json(q+'.json',res)
    print(f'{G}[+]' + C + 'Data saved into '+Y +q+'.json'+ W)
  else:
   print(f'{G} Not Powned ...')
